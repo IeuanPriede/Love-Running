@@ -1,7 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
-/* Asterisk wildcard se;ector to override default styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
@@ -26,6 +26,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -34,7 +37,7 @@ header a {
 }
 
 h1 {
-    font-family: 'oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -54,20 +57,37 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    padding: 0 1rem;
     left: 0 ;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
 }
 
-/* Main Content */
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
