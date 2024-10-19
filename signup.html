@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- Heading -->
+    <!-- Header -->
     <header>
         <a href="index.html">
             <h1 id="logo">Love Running</h1>
@@ -36,7 +36,7 @@
     <!-- Main Content -->
     <main>
         <section id="signup">
-            <form id="signup-form" method="post" action="https://formdump.codeinstitute.net">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
                 <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
             
                 <label for="first-name">First Name</label>
@@ -56,11 +56,11 @@
                     </div>
                     <div>
                         <label for="trail">Trail</label>
-                        <input type="radio" name="running_preference" id="trail" value="trail">
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
                     </div>
                     <div>
                         <label for="both">Both</label>
-                        <input type="radio" name="running_preference" id="both" value="both">
+                        <input type="radio" name="running_preference" id="both" value="both" required>
                     </div>
                     <button type="submit" class="join-button">Let's Run!</button>
                 </div>
